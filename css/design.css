@@ -5702,7 +5702,7 @@ address {
 
 .list_screen_slide .owl-stage .owl-item.center .item img {
     -webkit-transform: scale(1);
-    transform: scale(1);
+    transform: scale(0.6);
 }
 
 .list_screen_slide .owl-stage .owl-item .item img:hover {
@@ -6736,11 +6736,11 @@ blockquote {
 
   /* Medium Layout: 1280px. */
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .single_screen_slide {
             padding: 48px 30px 52px 30px;
         }
-    }
+    } */
     
     
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
