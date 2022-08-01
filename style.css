@@ -107,3 +107,7 @@ input:-webkit-autofill:focus {
     display: flex;
     justify-content: space-evenly;
 }
+
+/* .set_high{
+    height: 100%;
+} */

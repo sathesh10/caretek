@@ -5318,7 +5318,7 @@ Angle-background
 }
 
 .list_screen_slide:after {
-    content: url("../images/screen/transmobile.png");
+    content: url("../images/screen/transmobile1.png");
     left: 50%;
     position: absolute;
     top: 50%;
@@ -5697,12 +5697,12 @@ address {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+    transform: scale(0.6);
 }
 
 .list_screen_slide .owl-stage .owl-item.center .item img {
     -webkit-transform: scale(1);
-    transform: scale(0.6);
+    transform: scale(0.9);
 }
 
 .list_screen_slide .owl-stage .owl-item .item img:hover {
@@ -6805,3 +6805,16 @@ blockquote {
     /* Wide Mobile Layout: 480px. */
     
     @media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+    .d-flex{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    }
+
+    .logo_{
+    /* width: 20px; */
+    margin-right: 10px;
+    height: inherit;
+    }
