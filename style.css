@@ -111,3 +111,9 @@ input:-webkit-autofill:focus {
 /* .set_high{
     height: 100%;
 } */
+
+.play_icon:before{
+content: "e037";
+}
+
+
