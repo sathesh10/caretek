@@ -112,8 +112,8 @@ input:-webkit-autofill:focus {
     height: 100%;
 } */
 
-.play_icon:before{
-content: "e037";
+.d-flex-cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
