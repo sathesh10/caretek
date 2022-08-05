@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) {
         autoplayTimeout: 4000,
         smartSpeed: 500,
         center: true,
-        navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+        navText: ['<span class="material-icons">chevron_left</span>', '<span class="material-icons">chevron_right</span>'],
         responsive: {
             0: {
                 items: 1,
@@ -261,7 +261,7 @@ jQuery(window).on("load", function () {
         autoplayTimeout: 4000,
         smartSpeed: 500,
         center: true,
-        navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+        navText: ['<span class="material-icons">chevron_left</span>', '<span class="material-icons">chevron_right</span>'],
         responsive: {
             0: {
                 items: 1,
@@ -277,3 +277,55 @@ jQuery(window).on("load", function () {
     
 
 });
+
+
+document.getElementById("overlay").addEventListener("mouseover", overlayDisappear);
+document.getElementById("player").addEventListener("mouseout", overlayAppear);
+
+function replaceAll(str, toFind, toReplace){
+  return str.replace(new RegExp(toFind.toString(),"g"), toReplace.toString());
+}
+
+function overlayAppear(){
+  //console.log("Appear", document.getElementById("overlay").className);
+  document.getElementById("overlay").className = replaceAll( document.getElementById("overlay").className, "_disappear","_appear");  
+}
+
+function overlayDisappear(){
+  //console.log("Disappear", document.getElementById("overlay").className);
+  document.getElementById("overlay").className = replaceAll( document.getElementById("overlay").className, "_appear","_disappear");  
+}
+
+
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubePlayerAPIReady() {
+player = new YT.Player('player', {
+height: '390',
+width: '640',
+videoId: 'u1zgFlCw8Aw',
+events: {
+  'onReady': onPlayerReady,
+  'onStateChange': onPlayerStateChange
+}
+});
+}
+
+var myPlayerState;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          // DO THIS
+        }
+        myPlayerState = event.data;
+      }
+
+if (myPlayerState == 1){
+  // PAUSE SLIDER
+}
+

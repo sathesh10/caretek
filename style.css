@@ -117,3 +117,8 @@ input:-webkit-autofill:focus {
     align-items: center;
     justify-content: center;
 }
+
+.mar-btm-20{
+    margin-bottom: 20px;
+}
+

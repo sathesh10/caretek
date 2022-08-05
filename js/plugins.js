@@ -38,7 +38,7 @@
         vid.classList.toggle("stopfade");
         if (vid.paused) {
             vid.play();
-            pauseButton.innerHTML = '<span class="ti-control-pause" ></span>';
+            pauseButton.innerHTML = '<span class="material-icons">pause</span>';
             $('.section-video .section-bg,.section-video-text').addClass("fadeOut animated");
             $('.section-video .section-bg').animate({
                 'top': '100%'
@@ -48,7 +48,7 @@
             });
         } else {
             vid.pause();
-            pauseButton.innerHTML = '<span class="ti-control-play" ></span>';
+            pauseButton.innerHTML = '<span class="material-icons">play_arrow</span>';
             $('.section-video .section-bg,.section-video-text').removeClass("fadeOut animated");
             $('.section-video .section-bg').animate({
                 'top': '0%'
@@ -62,7 +62,7 @@
         vid.classList.toggle("stopfade");
         if (vid.paused) {
             vid.play();
-            pauseButton.innerHTML = '<span class="ti-control-pause" ></span>';
+            pauseButton.innerHTML = '<span class="material-icons">pause</span>';
             $('.section-video .section-bg,.section-video-text').addClass("fadeOut animated");
             $('.section-video .section-bg').animate({
                 'top': '100%'
@@ -72,7 +72,7 @@
             });
         } else {
             vid.pause();
-            pauseButton.innerHTML = '<span class="ti-control-play" ></span>';
+            pauseButton.innerHTML = '<span class="material-icons">play_arrow</span>';
             $('.section-video .section-bg,.section-video-text').removeClass("fadeOut animated");
 
             $('.section-video .section-bg').animate({

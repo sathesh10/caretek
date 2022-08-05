@@ -4870,6 +4870,9 @@
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel .owl-controls .owl-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     cursor: hand;
     -webkit-user-select: none;
