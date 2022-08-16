@@ -66,7 +66,7 @@ h1 {
     font-size: 40px;
 }
 
-p span,
+/* p span, */
 h1 span,
 h2 span,
 h3 span,
@@ -122,3 +122,24 @@ input:-webkit-autofill:focus {
     margin-bottom: 20px;
 }
 
+    .addReadMore.showlesscontent .SecSec,
+    .addReadMore.showlesscontent .readLess {
+        display: none;
+    }
+
+    .addReadMore.showmorecontent .readMore {
+        display: none;
+    }
+
+    .addReadMore .readMore,
+    .addReadMore .readLess {
+        font-weight: bold;
+        margin-left: 2px;
+        /* color: blue;  */
+        cursor: pointer;
+    }
+
+    .addReadMoreWrapTxt.showmorecontent .SecSec,
+    .addReadMoreWrapTxt.showmorecontent .readLess {
+        display: block;
+    }
